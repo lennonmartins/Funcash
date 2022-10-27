@@ -1,0 +1,46 @@
+@font-face {
+    font-family: FredokaOne;
+    src: url('/fonts/FredokaOne-Regular.ttf') format('truetype');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    background-image: url('/assets/banner_fundo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+ }
+ 
+.introducao{
+    position: relative;
+    top: 70px;
+}   
+
+.titulo{
+    font-family: FredokaOne;
+    color: #ffcb42;
+    text-shadow: 1px 3px 6px black;
+    font-size: 120px;
+    text-align: center;   
+}
+
+.subtitulo{
+    font-family: FredokaOne;
+    color: #fff;  
+    text-shadow: 1px 3px 6px black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.rodape{ 
+    width: 100vw;
+    position:fixed;
+    bottom: 0;
+}
