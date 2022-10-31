@@ -16,13 +16,12 @@
 
 body {
     height: 100vh;
-    text-align: center;
     color: var(--branco);
     font-family: var(--fonte_principal);
 }
 
 .fundo {
-    background: linear-gradient(#4B4B4Bc7, #4B4B4Bc7), url('/assets/fundo_mobile.png');
+    background: linear-gradient(#2b2b2bc7, #2b2b2bc7), url('/assets/fundo_mobile.png');
     background-position: bottom center;
     min-height: 100vh;
     display: flex;
@@ -35,6 +34,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-size: cover;
 
 }
 
@@ -92,7 +92,8 @@ body {
 }
 
 .conteudo__cadastrar--link,
-.conteudo__botao--acesso {
+.conteudo__botao--acesso,
+.formulario__cadastro__botao {
     text-transform: uppercase;
     margin-top: 2em;
     border: none;
@@ -149,10 +150,56 @@ body {
     padding: 01em;
 }
 
-.titulo__cadastro{
-   text-transform: uppercase;
+.titulo__cadastro {
+    text-transform: uppercase;
     font-size: 25px;
+    margin-top: 1em;
 }
 
-.texto__cadastro{
-    width: 60%;
+.texto__cadastro {
+    max-width: 70%;
+    margin: 1em auto;
+    letter-spacing: 0.05rem;
+    text-shadow: none;
+    font-size: 18px;
+}
+
+.formulario__cadastro {
+    width: 70%;
+    margin: 2em auto;
+    text-align: start;
+}
+
+.nome__label {
+    display: block;
+    margin-top: 1em;
+    font-size: 24px;
+    line-height: 28px;
+
+}
+
+.formulario__cadastro__campo {
+    margin-top: 0.5em;
+    width: 100%;
+    display: block;
+    border: none;
+    background-color: var(--cinza-claro);
+    border-radius: 10px;
+    min-height: 2em;
+    box-shadow: 0px 4px 5px rgba(3, 0, 0, 0.25);
+
+}
+
+.formulario__cadastro__botao {
+    width: 100%;
+    font-size: 30px;
+    padding: 0;
+    margin-top: 3em;
+}
+
+.link__rodape {
+    text-decoration: none;
+    color: var(--branco);
+    vertical-align: super;
+    padding: 10px;
+}
