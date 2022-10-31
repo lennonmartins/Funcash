@@ -1,46 +1,158 @@
-@font-face {
-    font-family: FredokaOne;
-    src: url('/fonts/FredokaOne-Regular.ttf') format('truetype');
+:root {
+    --amarelo: #FFCB42;
+    --branco: #ffffff;
+    --azul: #277BC0;
+    --roxo: #29003D;
+    --cinza: #C2C2C2;
+    --cinza-claro: #Efefef;
+
+    --fonte_principal: 'Fresca', sans-serif;
+    --fonte-secundaria: 'Fredoka One', cursive;
 }
-*{
+
+* {
     box-sizing: border-box;
-    margin: 0;
 }
 
-body{
-    width: 100vw;
+body {
     height: 100vh;
-    margin: 0px;
-    background-image: url('/assets/banner_fundo.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  
- }
- 
-.introducao{
-    position: relative;
-    top: 70px;
-}   
-
-.titulo{
-    font-family: FredokaOne;
-    color: #ffcb42;
-    text-shadow: 1px 3px 6px black;
-    font-size: 120px;
-    text-align: center;   
-}
-
-.subtitulo{
-    font-family: FredokaOne;
-    color: #fff;  
-    text-shadow: 1px 3px 6px black;
     text-align: center;
-    font-size: 50px;
+    color: var(--branco);
+    font-family: var(--fonte_principal);
 }
 
-.rodape{ 
-    width: 100vw;
-    position:fixed;
-    bottom: 0;
+.fundo {
+    background: linear-gradient(#4B4B4Bc7, #4B4B4Bc7), url('/assets/fundo_mobile.png');
+    background-position: bottom center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
 }
+
+.fundo__principal {
+    background-color: var(--azul);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px auto 0;
+    text-shadow: 0px 4px 4px rgba(3, 0, 0, 0.5);
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte-secundaria);
+    color: var(--amarelo);
+    font-size: 62px;
+    font-style: normal;
+}
+
+.logo {
+    max-width: 64px;
+    filter: drop-shadow(0 0 10px rgba(3, 0, 0, 0.8));
+}
+
+.conteudo {
+    flex-grow: 1;
+    font-family: var(--fonte_principal);
+    color: var(--branco);
+    text-align: center;
+    text-shadow: 0px 4px 5px rgba(3, 0, 0, 0.5);
+
+}
+
+.conteudo__acesso {
+    margin: 6em auto 0.6em;
+}
+
+.conteudo__email,
+.conteudo__senha {
+    margin: 2em auto;
+    display: block;
+    border: none;
+    background-color: var(--cinza-claro);
+    border-radius: 10px;
+    width: 70%;
+    height: 2.8em;
+    box-shadow: 0px 4px 5px rgba(3, 0, 0, 0.25);
+}
+
+.acesso--input::placeholder {
+    color: var(--azul);
+    font-size: 25px;
+    text-shadow: 0px 4px 5px rgba(3, 0, 0, 0.25);
+    text-align: center;
+    font-family: var(--fonte_principal);
+}
+
+.conteudo__cadastrar--link,
+.conteudo__botao--acesso {
+    text-transform: uppercase;
+    margin-top: 2em;
+    border: none;
+    background-color: var(--amarelo);
+    border-radius: 10px;
+    font-size: 30px;
+    text-shadow: 0px 4px 5px rgba(3, 0, 0, 0.25);
+    font-family: var(--fonte_principal);
+    color: var(--branco);
+    width: 70%;
+    text-decoration: none;
+    box-shadow: 0px 4px 5px rgba(3, 0, 0, 0.5);
+}
+
+.conteudo__acesso--texto,
+.conteudo__acesso--link {
+    font-family: var(--fonte_principal);
+    color: var(--branco);
+    font-size: 1em;
+    margin: 2em 0 0 0;
+    letter-spacing: 0.05rem;
+    text-shadow: 0px 4px 5px rgba(3, 0, 0, 0.5);
+    font-weight: 200;
+}
+
+.conteudo__cadastrar--link {
+    font-style: normal;
+    padding: 8px 15px;
+    box-shadow: #737380;
+    display: block;
+    margin: 0.5em auto 1em;
+    font-size: 20px;
+    text-shadow: 0px 4px 5px rgba(3, 0, 0, 0.5);
+}
+
+.conteudo__cadastro {
+    margin-top: 5em;
+}
+
+.rodape {
+    background-image: url('/assets/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-family: var(--fonte_principal);
+    text-align: center;
+    color: var(--branco);
+    padding: 1em;
+    padding-bottom: 0px;
+    letter-spacing: 0.05rem;
+    background-size: 100%;
+}
+
+.texto__rodape {
+    padding: 01em;
+}
+
+.titulo__cadastro{
+   text-transform: uppercase;
+    font-size: 25px;
+}
+
+.texto__cadastro{
+    width: 60%;
