@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fresca&family=Roboto:ital,wght@0,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>FunCa$h</title>
+</head>
+
+<body class="fundo__principal">
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">
+            FunCa$h
+        </h1>
+        <img class="logo" src="./assets/pote.svg" alt="Pote de ouro">
+    </header>
+    <main class="conteudo">
+        <h2 class="titulo__cadastro">Cadastre sua criança</h2>
+
+        <p>Vamos começar !</p>
+        
+        <form action="POST" class="formulario__cadastro">
+            <label class="nome__label" for="nome">Nome da criança</label>
+            <input class="formulario__cadastro__campo" required type="name" id="nome">
+            
+            <label class="nome__label" for="date">Data de Nascimento:</label>
+            <input class="formulario__cadastro__campo" required type="date" id="date">
+            
+            <label class="nome__label" for="gender" >Gênero:</label>
+            <select class="form-select formulario__cadastro__campo" required aria-label="Default select example">
+                <option value="1">Feminino</option>
+                <option value="2">Masculino</option>
+                <option value="3">Não binário</option>
+            </select>
+            
+            <label class="nome__label" for="apelido">Apelido (opcional)</label>
+            <input class="formulario__cadastro__campo" required type="name" id="apelido">
+
+            <div class="formulario__foto">
+            </div>
+            <a class="formulario__editar__foto" href="">Editar foto</a>
+            <button class="formulario__cadastro__botao">Próximo </button>
+        </form>
+        <a href="/menu.html" class="botao__voltar">Voltar</a>
+    </main>
+    <footer class="rodape">
+        <a class="link__rodape" href="#"> Já possuo login</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
