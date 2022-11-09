@@ -31,14 +31,16 @@
     <main class="conteudo">
         <h2 class="titulo__cadastro">Cadastre sua criança</h2>
 
-        <form action="POST" class="formulario__cadastro">
+        <form action="" class="formulario__cadastro" onsubmit="retornarSucesso(event)">
             <div class="cadastro-1">
                 <p style="text-align: center;">Vamos começar !</p>
                 <label class="nome__label" for="nome">Nome da criança</label>
-                <input class="formulario__cadastro__campo" required type="name" id="nome">
+                <input class="formulario__cadastro__campo campoNome" required type="name" id="nome">
+                <span class="alerta__nome" ></span>
 
                 <label class="nome__label" for="date">Data de Nascimento:</label>
-                <input class="formulario__cadastro__campo" required type="date" id="date">
+                <input class="formulario__cadastro__campo campoData" required type="date" id="date">
+                <span class="alerta__data " ></span>
 
                 <label class="nome__label" for="gender">Gênero:</label>
                 <select class="form-select formulario__cadastro__campo" required aria-label="Default select example">
@@ -67,7 +69,8 @@
                 <input class="formulario__cadastro__campo" required type="password" id="senha">
                 <label class="nome__label" for="confirmacao_senha">Confirmação da Senha:</label>
                 <input class="formulario__cadastro__campo" required type="password" id="confirmacao_senha">
-                <button class="formulario__cadastro__botao">Confirmar</button>
+                <button class="formulario__cadastro__botao botaoConfirmar" type="submit"
+                >Confirmar</button>
                 <a href="#" class="botao__voltar" id="botao__voltar">Voltar</a>
             </div>
         </form>

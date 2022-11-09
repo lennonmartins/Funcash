@@ -27,44 +27,50 @@
     </header>
     <main class="conteudo">
         <h2 class="titulo__cadastro">Seja bem vindo!</h2>
-        <div>
-            <p class="texto__cadastro">Vamos começar! É bem simples, informe os dados abaixo ! </p>
-            <form action="POST" class="formulario__cadastro">
-                <label class="nome__label" for="email">E-mail:</label>
-                <input class="formulario__cadastro__campo" required type="email" id="email">
-                <label class="nome__label" for="confirmacao_email">Confirmação de e-mail:</label>
-                <input class="formulario__cadastro__campo" required type="email" id="confirmacao_email">
-                <label class="nome__label" for="senha">Senha:</label>
-                <input class="formulario__cadastro__campo" required type="password" id="senha">
-                <label class="nome__label" for="confirmacao_senha">Confirmação da Senha:</label>
-                <input class="formulario__cadastro__campo" required type="password" id="confirmacao_senha">
-            </form>
-            <a class="conteudo__cadastrar--link" >Confirmar</a>
-        </div>
-        <div style="display: none;"> 
-            <form action="" class="formulario__cadastro">
+        <form  class="formulario__cadastro" action="index.html">
+            <div class="cadastro-1">
+                <p class="texto__cadastro">Vamos começar! É bem simples, informe os dados abaixo ! </p>
                 <label class="nome__label" for="nome">Nome do Responsável</label>
-                <input class="formulario__cadastro__campo" required type="name" id="nome">
-                
+                <input class="formulario__cadastro__campo campoNome" required type="name" id="nome">
+                <span class="alerta__nome"></span>
+
                 <label class="nome__label" for="cpf">CPF:</label>
-                <input class="formulario__cadastro__campo" required type="text" id="cpf">
-                
-                <label class="nome__label" for="gender" >Gênero:</label>
+                <input class="formulario__cadastro__campo campoCpf" required type="text" id="cpf">
+                <span class="alerta__cpf"></span>
+
+                <label class="nome__label" for="gender">Gênero:</label>
                 <select class="form-select formulario__cadastro__campo" required aria-label="Default select example">
                     <option value="1">Feminino</option>
                     <option value="2">Masculino</option>
                     <option value="3">Não binário</option>
                 </select>
-                
+
                 <label class="nome__label" for="date">Data de Nascimento:</label>
-                <input class="formulario__cadastro__campo" required type="date" id="date">
-    
+                <input class="formulario__cadastro__campo campoData" required type="date" id="date">
+                <span class="alerta__data "></span>
+
                 <div class="formulario__foto">
                 </div>
                 <a class="formulario__editar__foto" href="">Editar foto</a>
-                <button class="formulario__cadastro__botao">Confirmar</button>
-            </form>
-        </div>
+
+                <a class="conteudo__cadastrar--link" id="botao__proximo" href="#">Proximo</a>
+            </div>
+
+            <div class="cadastro-2 invisivel">
+                <label class="nome__label" for="email">E-mail:</label>
+                <input class="formulario__cadastro__campo campoEmail" required type="email" id="email">
+                <label class="nome__label" for="confirmacao_email">Confirmação de e-mail:</label>
+                <input class="formulario__cadastro__campo" required type="email" id="confirmacao_email">
+                <label class="nome__label" for="senha">Senha:</label>
+                <input class="formulario__cadastro__campo campoSenha" required type="password" id="senha">
+                <label class="nome__label" for="confirmacao_senha">Confirmação da Senha:</label>
+                <input class="formulario__cadastro__campo" required type="password" id="confirmacao_senha">
+                
+                <button class="formulario__cadastro__botao botaoConfirmar" type="submit">Confirmar</button>
+                
+                <a href="#" class="botao__voltar" id="botao__voltar">Voltar</a>
+            </div>
+        </form>
     </main>
     <footer class="rodape">
         <a class="link__rodape" href="#"> Já possuo login</a>
@@ -72,6 +78,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
+    <script src="/js/conteudo.js"></script>
+    <script src="/js/cadastro.js"></script>
 </body>
 
 </html>
