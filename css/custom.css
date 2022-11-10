@@ -234,4 +234,19 @@ padding: 0 35%;
 	display: none;
 }
 
+.alerta{
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    border-radius: 15px;
+}
+.sucesso{
+    color: rgb(20, 240, 20);
+    
+}
+.erro{
+   color: rgb(172, 49, 49);
+}
 

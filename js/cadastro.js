@@ -1,28 +1,22 @@
 
+let conteudoForm_1 = document.querySelector(".cadastro-1");
+let conteudoForm_2 = document.querySelector(".cadastro-2");
 let campoCpf = document.querySelector(".campoCpf");
 let botao = document.querySelector(".botaoConfirmar")
+let botao_Proximo = document.querySelector(".botao__proximo");
 
 
-botaoProximo.addEventListener("click", function () {
-    if (  verificarNome() && verificarCpf() && verificarData() ) {
 
-        conteudoForm1.classList.add("invisivel");
+botao_Proximo.addEventListener("click", function () {
+    if (  verificarNome() && validaCpf() && verificarData() ) {
 
-        conteudoForm2.classList.remove("invisivel");
+        conteudoForm_1.classList.add("invisivel");
+
+        conteudoForm_2.classList.remove("invisivel");
+        
     }
 })
 
-function verificarCpf() {
-    let alerta = document.querySelector(".alerta__cpf");
-    if ((campoCpf.value).trim() == "" || campoCpf.value == null) {
-        alerta.textContent = "Preencha um cpf válido!"
-        console.log("Não preencheu cpf!");
-        return false;
-    } else {
-        alerta.textContent = "CPF válido!"
-        console.log("preencheu nome!");
-        return true;
-    }
-}
+
 
 

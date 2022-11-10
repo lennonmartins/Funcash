@@ -32,7 +32,7 @@
         <h2 class="titulo__cadastro">Cadastre sua criança</h2>
 
         <form action="" class="formulario__cadastro" onsubmit="retornarSucesso(event)">
-            <div class="cadastro-1">
+            <div class="cadastro_1">
                 <p style="text-align: center;">Vamos começar !</p>
                 <label class="nome__label" for="nome">Nome da criança</label>
                 <input class="formulario__cadastro__campo campoNome" required type="name" id="nome">
@@ -58,13 +58,14 @@
                 <a class="conteudo__cadastrar--link" id="botao__proximo" href="#">Próximo </a>
                 <a href="/menu.html" class="botao__voltar" >Voltar</a>
             </div>
-            <div class="cadastro-2 invisivel">
+            <div class="cadastro_2 invisivel">
                 <p class="texto__cadastro">Agora para terminar, informe o e-mail da criançar e uma senha para acesso
                     dela! </p>
                 <label class="nome__label" for="email">E-mail:</label>
                 <input class="formulario__cadastro__campo" required type="email" id="email">
                 <label class="nome__label" for="confirmacao_email">Confirmação de e-mail:</label>
                 <input class="formulario__cadastro__campo" required type="email" id="confirmacao_email">
+                <span class="alerta__email " ></span>
                 <label class="nome__label" for="senha">Senha:</label>
                 <input class="formulario__cadastro__campo" required type="password" id="senha">
                 <label class="nome__label" for="confirmacao_senha">Confirmação da Senha:</label>
@@ -74,7 +75,7 @@
                 <a href="#" class="botao__voltar" id="botao__voltar">Voltar</a>
             </div>
         </form>
-        <div class="cadastro-3 invisivel">
+        <div class="cadastro_3 invisivel">
             <p class="texto__cadastro">Cadasdro de Usuário Kid realizado com SUCESSO ! </p>
             <img src="/assets/acept.svg" alt="Cadastro concluído" style="margin-top: 5em;">
             <a class="conteudo__cadastrar--link" href="/cadastro-kid.html" style="margin-top: 5em;">Cadastrar nova
@@ -90,6 +91,8 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
     <script src="/js/conteudo.js"></script>
+    <script src="/js/validaEmail.js"></script>
+    
 </body>
 
 </html>
