@@ -18,5 +18,23 @@ botao_Proximo.addEventListener("click", function () {
 })
 
 
+let botaoVoltar = document.getElementById("botao__voltar")
+
+botaoVoltar.addEventListener("click", function () {
+    conteudoForm_1.classList.remove("invisivel");
+
+    conteudoForm_2.classList.add("invisivel");
+})
+
+
+
+function retornarSucesso(event) {
+    event.preventDefault();
+    if(!validarConfirmacaoEmail() && !validarConfirmacaoSenha() ){
+        window.location.href = "/index.html";
+    }
+    }
+
+
 
 
