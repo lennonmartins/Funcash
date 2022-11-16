@@ -7,6 +7,7 @@ function validarConfirmacaoEmail(){
     console.log(email);
     if ((campoEmail.value) != campoConfirmacaoEmail.value) {
         alerta.textContent = "Parece que os e-mails não conferem";
+        alerta.classList.add("sucesso");
         alerta.classList.add("erro");
         return true
     } else {

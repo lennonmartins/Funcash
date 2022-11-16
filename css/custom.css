@@ -91,6 +91,7 @@ body {
     font-family: var(--fonte_principal);
 }
 
+.botao__usuario,
 .conteudo__cadastrar--link,
 .conteudo__botao--acesso,
 .formulario__cadastro__botao {
@@ -100,7 +101,6 @@ body {
     background-color: var(--amarelo);
     border-radius: 10px;
     font-size: 30px;
-    text-shadow: 0px 4px 5px rgba(3, 0, 0, 0.25);
     font-family: var(--fonte_principal);
     color: var(--branco);
     width: 70%;
@@ -119,18 +119,48 @@ body {
     font-weight: 200;
 }
 
-.conteudo__cadastrar--link {
+.conteudo__cadastrar--link, .botao__usuario {
     font-style: normal;
     padding: 8px 15px;
     box-shadow: #737380;
     display: block;
     margin: 0.5em auto 1em;
     font-size: 20px;
-    text-shadow: 0px 4px 5px rgba(3, 0, 0, 0.25);
 }
 
 .conteudo__cadastro {
     margin-top: 5em;
+}
+
+.foto__botao{
+    background-color: var(--cinza-claro);
+   
+    width: 2.5em;
+    height: 2.5em;
+    border-style: solid;  border-width: unset;
+    border-color: var(--amarelo);
+    border-radius: 9em;
+}
+
+.saldo__botao{
+    font-size: 16px;
+}
+
+.botao__usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.texto_botao{
+    text-transform: capitalize;
+    text-align: start;
+    color: var(--roxo);
+}
+.titulo__container{
+    font-size: 28px;
+    text-align: inherit;
 }
 
 .rodape {
