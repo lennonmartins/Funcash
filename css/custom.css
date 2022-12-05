@@ -21,7 +21,7 @@ body {
 }
 
 .fundo {
-    background: linear-gradient(#2b2b2bc7, #2b2b2bc7), url('//assets/banner_fundo.jpg');
+    background: linear-gradient(#2b2b2bc7, #2b2b2bc7), url('/assets/banner_fundo.jpg');
     background-position: bottom center;
     min-height: 100vh;
     display: flex;
