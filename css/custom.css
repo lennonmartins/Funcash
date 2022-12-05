@@ -165,7 +165,7 @@ body {
 }
 
 .rodape {
-    background-image: url('//assets/Vector.svg');
+    background-image: url('/assets/Vector.svg');
     background-repeat: no-repeat;
     background-position: bottom;
     font-family: var(--fonte_principal);
