@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fresca&family=Roboto:ital,wght@0,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fresca&family=Roboto:ital,wght@0,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>FunCa$h</title>
@@ -34,49 +34,55 @@
         <form action="" class="formulario__cadastro" onsubmit="retornarSucesso(event)">
             <div class="cadastro_1">
                 <p style="text-align: center;">Vamos começar !</p>
-                <label class="nome__label" for="nome">Nome da criança</label>
-                <input class="formulario__cadastro__campo campoNome" required type="name" id="nome">
-                <span class="alerta__nome" ></span>
+                <div style="text-align: start;">
+                    <label class="nome__label" for="nome">Nome da criança</label>
+                    <input class="formulario__cadastro__campo campoNome" required type="name" id="nome">
+                    <span class="alerta__nome alerta"></span>
 
-                <label class="nome__label" for="date">Data de Nascimento:</label>
-                <input class="formulario__cadastro__campo campoData" required type="date" id="date">
-                <span class="alerta__data " ></span>
+                    <label class="nome__label" for="date">Data de Nascimento:</label>
+                    <input class="formulario__cadastro__campo campoData" required type="date" id="date">
+                    <span class="alerta__data alerta"></span>
 
-                <label class="nome__label" for="gender">Gênero:</label>
-                <select class="form-select formulario__cadastro__campo" required aria-label="Default select example">
-                    <option value="1">Feminino</option>
-                    <option value="2">Masculino</option>
-                    <option value="3">Não binário</option>
-                </select>
+                    <label class="nome__label" for="gender">Gênero:</label>
+                    <select class="form-select formulario__cadastro__campo" required
+                        aria-label="Default select example">
+                        <option value="1">Feminino</option>
+                        <option value="2">Masculino</option>
+                        <option value="3">Não binário</option>
+                    </select>
 
-                <label class="nome__label" for="apelido">Apelido (opcional)</label>
-                <input class="formulario__cadastro__campo" type="name" id="apelido">
-
-                <div class="formulario__foto">
+                    <label class="nome__label" for="apelido">Apelido (opcional)</label>
+                    <input class="formulario__cadastro__campo" type="name" id="apelido">
                 </div>
-                <a class="formulario__editar__foto" href="">Editar foto</a>
-                <a class="conteudo__cadastrar--link" id="botao__proximo" href="#">Próximo </a>
-                <a href="/menu.html" class="botao__voltar" >Voltar</a>
+                <div style="">
+                    <div class="formulario__foto">
+                    </div>
+                    <a class="formulario__editar__foto" href="">Editar foto</a>
+                    <a class="conteudo__cadastrar--link " id="botao__proximo" href="#"
+                        style="text-align: center">Próximo </a>
+                    <a href="/menu.html" class="botao__voltar">Voltar</a>
+                </div>
             </div>
             <div class="cadastro_2 invisivel">
-                <p class="texto__cadastro">Agora para terminar, informe o e-mail da criançar e uma senha para acesso
+                <p class="texto__cadastro">Agora para terminar, informe o e-mail da criança e uma senha para acesso
                     dela! </p>
-                <label class="nome__label" for="email">E-mail:</label>
-                <input class="formulario__cadastro__campo" required type="email" id="email">
-                <label class="nome__label" for="confirmacao_email">Confirmação de e-mail:</label>
-                <input class="formulario__cadastro__campo" required type="email" id="confirmacao_email">
-                <span class="alerta__email alerta" ></span>
+                <div style="text-align: start;">
+                    <label class="nome__label" for="email">E-mail:</label>
+                    <input class="formulario__cadastro__campo" required type="email" id="email">
+                    <label class="nome__label" for="confirmacao_email">Confirmação de e-mail:</label>
+                    <input class="formulario__cadastro__campo" required type="email" id="confirmacao_email">
+                    <span class="alerta__email alerta"></span>
 
-                <label class="nome__label" for="senha">Senha:</label>
-                <input class="formulario__cadastro__campo" required type="password" id="senha">
-                <label class="nome__label" for="confirmacao_senha">Confirmação da Senha:</label>
-                <input class="formulario__cadastro__campo" required type="password" id="confirmacao_senha">
-                <span class="alerta__senha alerta" ></span>
+                    <label class="nome__label" for="senha">Senha:</label>
+                    <input class="formulario__cadastro__campo" required type="password" id="senha">
+                    <label class="nome__label" for="confirmacao_senha">Confirmação da Senha:</label>
+                    <input class="formulario__cadastro__campo" required type="password" id="confirmacao_senha">
+                    <span class="alerta__senha alerta"></span>
+                </div>
 
-                <button class="formulario__cadastro__botao botaoConfirmar" type="submit"
-                >Confirmar</button>
-                <a href="#" class="botao__voltar" id="botao__voltar">Voltar</a>
-            </div>
+                    <button class="formulario__cadastro__botao botaoConfirmar" type="submit">Confirmar</button>
+                    <a href="#" class="botao__voltar" id="botao__voltar">Voltar</a>
+                </div>
         </form>
         <div class="cadastro_3 invisivel">
             <p class="texto__cadastro">Cadasdro de Usuário Kid realizado com SUCESSO ! </p>
@@ -99,8 +105,8 @@
     <script src="/js/validaNome.js"></script>
     <script src="/js/validaSenha.js"></script>
     <script src="/js/conteudo.js"></script>
-    
-    
+
+
 </body>
 
 </html>

@@ -31,23 +31,23 @@
     </header>
     <main class="conteudo">
         <h2 class="titulo__cadastro">Cadastre uma nova tarefa!</h2>
-        <form class="formulario__cadastro" action="index.html">
+        <form class="formulario__cadastro " action="index.html">
             <div class="cadastro-1">
                 <p class="texto__cadastro">Informe os dados abaixo para cadastrar uma nova tarefa </p>
-                <label class="nome__label" for="tarefa">Qual será a tarefa?</label>
-                <input class="formulario__cadastro__campo campoTarefa" required type="name" id="tarefa">
+                <div style="text-align: start;">
+                    <label class="nome__label" for="tarefa">Qual será a tarefa?</label>
+                    <input class="formulario__cadastro__campo campoTarefa" required type="name" id="tarefa">
 
-                <label class="nome__label" for="valor">Quanto irá valer essa tarefa?</label>
-                <input class="formulario__cadastro__campo campoValor" required type="number" id="valor">
+                    <label class="nome__label" for="valor">Quanto irá valer essa tarefa?</label>
+                    <input class="formulario__cadastro__campo campoValor" required type="number" id="valor">
 
-                <label class="nome__label" for="prazo">Até quando a tarefa deverá ser feita?</label>
-                <input class="formulario__cadastro__campo campoPrazo" required type="date" id="prazo">
-                <input class="formulario__cadastro__campo campoPrazo" required type="time" id="prazo">
-
+                    <label class="nome__label" for="prazo">Até quando a tarefa deverá ser feita?</label>
+                    <input class="formulario__cadastro__campo campoPrazo" required type="date" id="prazo">
+                    <input class="formulario__cadastro__campo campoPrazo" required type="time" id="prazo">
+                </div>
                 <button class="formulario__cadastro__botao botaoConfirmar" type="submit">Confirmar</button>
-                
-            </form>
-            <a href="/menu-kid.html" class="botao__voltar" id="botao__voltar">Voltar</a>
+        </form>
+        <a href="/menu-kid.html" class="botao__voltar" >Voltar</a>
     </main>
     <footer class="rodape">
         <a class="link__rodape" href="#"> Editar Cadastro</a>

@@ -1,5 +1,9 @@
 let cpf = document.querySelector(".campoCpf");
 
+cpf.addEventListener("focusout", function(){
+    validaCpf()
+});
+
 function validaCpf() {
     let mensagem = document.querySelector(".alerta__cpf");
     if (valida(cpf.value)) {

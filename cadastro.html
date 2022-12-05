@@ -10,14 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js">
+    </script>
     <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fresca&family=Roboto:ital,wght@0,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fresca&family=Roboto:ital,wght@0,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-        
+
     <title>FunCa$h</title>
 </head>
 
@@ -33,6 +34,7 @@
         <form class="formulario__cadastro" action="" onsubmit="retornarSucesso(event)">
             <div class="cadastro-1">
                 <p class="texto__cadastro">Vamos começar! É bem simples, informe os dados abaixo ! </p>
+                <div style="text-align: start;">
                 <label class="nome__label" for="nome">Nome do Responsável</label>
                 <input class="formulario__cadastro__campo campoNome" required type="name" id="nome">
                 <span class="alerta__nome alerta"></span>
@@ -51,27 +53,28 @@
                 <label class="nome__label" for="date">Data de Nascimento:</label>
                 <input class="formulario__cadastro__campo campoData" required type="date" id="date">
                 <span class="alerta__data alerta"></span>
+            </div>
+            <div class="formulario__foto">
+            </div>
+            <a class="formulario__editar__foto" href="">Editar foto</a>
 
-                <div class="formulario__foto">
-                </div>
-                <a class="formulario__editar__foto" href="">Editar foto</a>
-
-                <a class="conteudo__cadastrar--link botao__proximo" id="botao__proximo">Proximo</a>
+            <a class="conteudo__cadastrar--link botao__proximo" id="botao__proximo">Proximo</a>
             </div>
 
             <div class="cadastro-2 invisivel">
-                <label class="nome__label" for="email">E-mail:</label>
-                <input class="formulario__cadastro__campo campoEmail" required type="email" id="email">
-                <label class="nome__label" for="confirmacao_email">Confirmação de e-mail:</label>
-                <input class="formulario__cadastro__campo" required type="email" id="confirmacao_email">
-                <span class="alerta__email alerta"></span>
+                <div style="text-align: start;">
+                    <label class="nome__label" for="email">E-mail:</label>
+                    <input class="formulario__cadastro__campo campoEmail" required type="email" id="email">
+                    <label class="nome__label" for="confirmacao_email">Confirmação de e-mail:</label>
+                    <input class="formulario__cadastro__campo" required type="email" id="confirmacao_email">
+                    <span class="alerta__email alerta"></span>
 
-                <label class="nome__label" for="senha">Senha:</label>
-                <input class="formulario__cadastro__campo campoSenha" required type="password" id="senha">
-                <label class="nome__label" for="confirmacao_senha">Confirmação da Senha:</label>
-                <input class="formulario__cadastro__campo" required type="password" id="confirmacao_senha">
-                <span class="alerta__senha alerta"></span>
-
+                    <label class="nome__label" for="senha">Senha:</label>
+                    <input class="formulario__cadastro__campo campoSenha" required type="password" id="senha">
+                    <label class="nome__label" for="confirmacao_senha">Confirmação da Senha:</label>
+                    <input class="formulario__cadastro__campo" required type="password" id="confirmacao_senha">
+                    <span class="alerta__senha alerta"></span>
+                </div>
                 <button class="formulario__cadastro__botao botaoConfirmar" type="submit">Confirmar</button>
 
             </div>
