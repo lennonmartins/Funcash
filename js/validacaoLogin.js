@@ -17,7 +17,7 @@ function validarLogin(){
 function retornarSucesso(event) {
     event.preventDefault();
     if(validarLogin()){
-        window.location.href = "../menu.html";
+        window.location.href = "./menu.html";
     }else{
         console.log("erro404");
     }

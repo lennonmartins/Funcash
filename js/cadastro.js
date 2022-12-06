@@ -31,7 +31,7 @@ botaoVoltar.addEventListener("click", function () {
 function retornarSucesso(event) {
     event.preventDefault();
     if(!validarConfirmacaoEmail() && !validarConfirmacaoSenha() ){
-        window.location.href = "/index.html";
+        window.location.href = "./index.html";
     }
     }
 
