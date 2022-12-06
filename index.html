@@ -24,14 +24,14 @@
         <img class="logo" src="./assets/pote.svg" alt="Pote de ouro">
     </header>
     <main class="conteudo">
-        <form action="/menu.html" class="conteudo__acesso">
+        <form action="" class="conteudo__acesso" onsubmit="retornarSucesso(event)">
             <label for="email"></label>
-            <input class="conteudo__email acesso--input" type="email" id="email" placeholder="E-MAIL">
+            <input class="conteudo__email acesso--input " type="email" id="email" placeholder="E-MAIL" required>
 
             <label for="senha"></label>
-            <input class="conteudo__senha acesso--input" type="password" id="senha" placeholder="SENHA">
+            <input class="conteudo__senha acesso--input" type="password" id="senha" placeholder="SENHA" minlength="6" required>
 
-            <button class="conteudo__botao--acesso" type="submit">Login</button>
+            <button class="conteudo__botao--acesso" id="botao__login" type="submit">Login</button>
         </form>
         <a class="conteudo__acesso--link" href="#">Esqueci minha senha</a>
         <div class="conteudo__cadastro">
@@ -42,6 +42,8 @@
     <footer class="rodape">
         <p class="texto__rodape"> Desenvolvido por Insted </p>
     </footer>
+    <script src="/js/validacaoLogin.js"></script>
+
 </body>
 
 </html>
