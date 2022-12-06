@@ -284,3 +284,9 @@ padding: 0 35%;
 .saldo__botao, .nome__botao{
     margin-bottom: 0;
 }
+
+.erroSenha{
+    background-color: rgba(172, 49, 49, 0.884);
+    padding: 10px 20px;
+    border-radius: 20px;
+}

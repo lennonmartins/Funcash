@@ -1,14 +1,16 @@
-campoEmail = document.querySelector("#email");
-campoSenha = document.querySelector("#senha");
-botaoAcessar = document.querySelector("#botao__login");
+let campoEmail = document.querySelector("#email");
+let campoSenha = document.querySelector("#senha");
+let botaoAcessar = document.querySelector("#botao__login");
+let campoErro = document.querySelector("#erroSenha")
 
 
 function validarLogin(){
     if (campoEmail.value == "teste@insted.com.br" && campoSenha.value == "123456"){
-        console.log("entei");
+        
         return true;
     } else{
-        console.log(" n entei");
+        campoErro.classList.add("erroSenha");
+        campoErro.textContent = "Login/senha incorreto!"
         return false;
     }
 }
